@@ -1,9 +1,9 @@
 //----------------------------------------------------
-// Desenvolvedor: Jorge ClÍnio da Silva Junior
-// Local: BrasÌlia - DF
+// Desenvolvedor: Jorge Cl√™nio da Silva Junior
+// Local: Bras√≠lia - DF
 // Data e hora: 18/02/2017 - 17:30 ~ 17:52
-// Curso: Engenharia da ComputaÁ„o
-// Semestre: 4∫ Semestre
+// Curso: Engenharia da Computa√ß√£o
+// Semestre: 4¬∫ Semestre
 //----------------------------------------------------
 
 #include<stdio.h>
@@ -12,22 +12,21 @@
 
 int main(void){
 	
-	int peso;
-	float altura, imc;
+	float peso, altura, imc;
 	
 	setlocale(LC_ALL,"Portuguese");
-	printf("\nOl·, seja bem vindo. Este programa ir· executar o c·lculo de seu IMC (Õndice de Massa Corporal).\n\n");	
-	printf("OBS: DIGITE A ALTURA UTILIZANDO VÕRGULA, CASO CONTR¡RIO HAVER¡ ERRO NA HORA DE REALIZAR O C¡LCULO DO MESMO.\nEX: 1,70 AO INV…S DE 1.70.\n\n");
+	printf("\nOl√°, seja bem vindo. Este programa ir√° executar o c√°lculo de seu IMC (√çndice de Massa Corporal).\n\n");	
+	printf("OBS: DIGITE A ALTURA UTILIZANDO V√çRGULA, CASO CONTR√ÅRIO HAVER√Å ERRO NA HORA DE REALIZAR O C√ÅLCULO DO MESMO.\nEX: 1,70 AO INV√âS DE 1.70.\n\n");
 	
 	printf("Digite aqui seu peso em quilos(kg): ");
-	scanf("%d",&peso);
+	scanf("%f",&peso);
 	printf("Digite aqui sua altura em metros(m): ");
 	scanf("%f",&altura);
 	
 	imc=peso/(altura*altura);
 	
 	printf("\n|------------------------------------------------|\n");
-  	printf("| VALOR FINAL         | SITUA«√O                 |\n");
+  	printf("| VALOR FINAL         | SITUA√á√ÉO                 |\n");
   	printf("|------------------------------------------------|\n");
   	printf("| Abaixo de 17        | Muito abaixo do peso.    |\n");
   	printf("| Entre 17 e 18,49    | Abaixo do peso.          |\n");
@@ -35,11 +34,11 @@ int main(void){
   	printf("| Entre 25 e 29,99    | Acima do peso.           |\n");
   	printf("| Entre 30 e 34,99    | Obesidade I.             |\n");
   	printf("| Entre 35 e 39,99    | Obesidade II (severa).   |\n");
-  	printf("| Acima de 40         | Obesidade III (mÛrbida). |\n");
+  	printf("| Acima de 40         | Obesidade III (m√≥rbida). |\n");
   	printf("|------------------------------------------------|\n\n");
 	
-	printf("O resultado de seu IMC È de: %.2f", imc);
-	printf("\nConsulte a tabela acima para verificar sua situaÁ„o.\n\n\n");
+	printf("O resultado de seu IMC √© de: %.2f", imc);
+	printf("\nConsulte a tabela acima para verificar sua situa√ß√£o.\n\n\n");
 			
 	system("pause");
 	getch();
